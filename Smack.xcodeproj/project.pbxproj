@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6CD5C55BB852E1E10EC4EBF8 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684A71965CF2AE1ACCDD4147 /* Pods_Smack.framework */; };
+		AD626D8B21CD8826007D1B20 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD626D8A21CD8826007D1B20 /* GradientView.swift */; };
+		AD626D8E21CDA2B7007D1B20 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD626D8D21CDA2B7007D1B20 /* Constants.swift */; };
+		AD626D9021CDA8A8007D1B20 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD626D8F21CDA8A8007D1B20 /* LogInVC.swift */; };
 		ADD3547821CCA46100C6BF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3547721CCA46100C6BF35 /* AppDelegate.swift */; };
-		ADD3547A21CCA46100C6BF35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD3547921CCA46100C6BF35 /* ViewController.swift */; };
 		ADD3547D21CCA46100C6BF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD3547B21CCA46100C6BF35 /* Main.storyboard */; };
 		ADD3547F21CCA46200C6BF35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD3547E21CCA46200C6BF35 /* Assets.xcassets */; };
 		ADD3548221CCA46200C6BF35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD3548021CCA46200C6BF35 /* LaunchScreen.storyboard */; };
@@ -20,9 +22,11 @@
 /* Begin PBXFileReference section */
 		684A71965CF2AE1ACCDD4147 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E04DD97189B6DF335E7D4C0 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
+		AD626D8A21CD8826007D1B20 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		AD626D8D21CDA2B7007D1B20 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD626D8F21CDA8A8007D1B20 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		ADD3547421CCA46100C6BF35 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD3547721CCA46100C6BF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADD3547921CCA46100C6BF35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADD3547C21CCA46100C6BF35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADD3547E21CCA46200C6BF35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD3548121CCA46200C6BF35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AD626D8C21CDA29E007D1B20 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AD626D8D21CDA2B7007D1B20 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		ADD3546B21CCA46100C6BF35 = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +85,12 @@
 		ADD3547621CCA46100C6BF35 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				AD626D8C21CDA29E007D1B20 /* Utilities */,
 				ADD3548C21CD31C300C6BF35 /* Model */,
 				ADD3548B21CD31B700C6BF35 /* View */,
 				ADD3548A21CD31AB00C6BF35 /* Controller */,
 				ADD3548921CCA7AC00C6BF35 /* Supportingfiles */,
 				ADD3547721CCA46100C6BF35 /* AppDelegate.swift */,
-				ADD3547921CCA46100C6BF35 /* ViewController.swift */,
 				ADD3547B21CCA46100C6BF35 /* Main.storyboard */,
 				ADD3547E21CCA46200C6BF35 /* Assets.xcassets */,
 				ADD3548021CCA46200C6BF35 /* LaunchScreen.storyboard */,
@@ -99,6 +111,7 @@
 			children = (
 				ADD3548D21CD321700C6BF35 /* ChatVC.swift */,
 				ADD3548F21CD322600C6BF35 /* ChannelVC.swift */,
+				AD626D8F21CDA8A8007D1B20 /* LogInVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 		ADD3548B21CD31B700C6BF35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD626D8A21CD8826007D1B20 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD626D8E21CDA2B7007D1B20 /* Constants.swift in Sources */,
 				ADD3549021CD322600C6BF35 /* ChannelVC.swift in Sources */,
+				AD626D9021CDA8A8007D1B20 /* LogInVC.swift in Sources */,
 				ADD3548E21CD321700C6BF35 /* ChatVC.swift in Sources */,
-				ADD3547A21CCA46100C6BF35 /* ViewController.swift in Sources */,
+				AD626D8B21CD8826007D1B20 /* GradientView.swift in Sources */,
 				ADD3547821CCA46100C6BF35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
