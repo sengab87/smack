@@ -22,5 +22,9 @@ class ChatVC: UIViewController {
         
 
     }
+    @IBAction func unWindfromLogInVC(unwindSegue: UIStoryboardSegue)
+    {
+        
+    }
 
 }
