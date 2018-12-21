@@ -4,13 +4,13 @@ PODS:
     - Starscream (~> 3.0.2)
   - Starscream (3.0.6)
   - SwiftyJSON (4.2.0)
-  - SWRevealViewController (2.3.0)
+  - SWRevealViewController (2.4.0)
 
 DEPENDENCIES:
   - Alamofire
   - Socket.IO-Client-Swift
   - SwiftyJSON
-  - SWRevealViewController
+  - SWRevealViewController (from `https://github.com/sengab87/SWRevealViewController`, commit `fa4358ac224c867735a730a710e9605bbe6cdbd3`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,15 +18,24 @@ SPEC REPOS:
     - Socket.IO-Client-Swift
     - Starscream
     - SwiftyJSON
-    - SWRevealViewController
+
+EXTERNAL SOURCES:
+  SWRevealViewController:
+    :commit: fa4358ac224c867735a730a710e9605bbe6cdbd3
+    :git: https://github.com/sengab87/SWRevealViewController
+
+CHECKOUT OPTIONS:
+  SWRevealViewController:
+    :commit: fa4358ac224c867735a730a710e9605bbe6cdbd3
+    :git: https://github.com/sengab87/SWRevealViewController
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Socket.IO-Client-Swift: 2b2720f14c92ff1237ced09bc2f2da2022624fee
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
-  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+  SWRevealViewController: b653f339865208c97be99a24876545f5be0cc4bb
 
-PODFILE CHECKSUM: f410f711a3707b9bc0fe9d46a97029feb8ca3c37
+PODFILE CHECKSUM: 558e87af22e27693dd0345f25ae456610d32463d
 
 COCOAPODS: 1.5.3

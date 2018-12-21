@@ -6,9 +6,8 @@ project 'Smack.xcodeproj'
 target 'Smack' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Socket.IO-Client-Swift'
-  pod 'SWRevealViewController'
+  pod 'SWRevealViewController', :git => 'https://github.com/sengab87/SWRevealViewController', :commit => 'fa4358ac224c867735a730a710e9605bbe6cdbd3'
 end
